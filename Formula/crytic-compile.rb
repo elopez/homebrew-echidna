@@ -8,6 +8,13 @@ class CryticCompile < Formula
   license "AGPL-3.0-only"
   head "https://github.com/crytic/crytic-compile.git", branch: "master"
 
+  bottle do
+    root_url "https://github.com/elopez/homebrew-echidna/releases/download/crytic-compile-0.2.2"
+    sha256 cellar: :any_skip_relocation, big_sur:      "aac32d089e55884b4be811412ecdf150193b45677d54ebb0eca767053ac345c8"
+    sha256 cellar: :any_skip_relocation, catalina:     "130faced1f655f44a5600ea0f82c9e80053c9e2428b857a04e1e13c622fc9a22"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "7a5a2dcc1b49c37c6eee1d23952b2363da90f5e918d1c59f43654089c04b44be"
+  end
+
   depends_on "python"
   depends_on "solc-select"
 
