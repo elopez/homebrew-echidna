@@ -8,6 +8,13 @@ class SlitherAnalyzer < Formula
   license "AGPL-3.0-only"
   head "https://github.com/crytic/slither.git", branch: "master"
 
+  bottle do
+    root_url "https://github.com/elopez/homebrew-echidna/releases/download/slither-analyzer-0.8.2"
+    sha256 cellar: :any_skip_relocation, big_sur:      "63da44e991a32cf845fa340254573f95177d6d0eefed39e954a352c120053d52"
+    sha256 cellar: :any_skip_relocation, catalina:     "68bc0e1718f53b6032a3a43a83bd9677a438edf30e75e41c4170d0d8fd894649"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "294153d31731d40eb23b4a8a21c9caad5156b0ca05107c9ef2c7a1818d119f12"
+  end
+
   depends_on "python"
 
   resource "crytic-compile" do
