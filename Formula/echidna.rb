@@ -7,10 +7,10 @@ class Echidna < Formula
   head "https://github.com/crytic/echidna.git", branch: "master"
 
   bottle do
-    root_url "https://github.com/elopez/homebrew-echidna/releases/download/echidna-2.0.0"
-    sha256 cellar: :any,                 big_sur:      "500b9b2295a17a0ec4413a54a8e619bc292e16610b2b536c04d35d7fc296f53f"
-    sha256 cellar: :any,                 catalina:     "d92e36c4be39418251280a72784263308948b6540bed81190ce4bbd74c107089"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "4de13459ad392f574178f344f52985386ddd01f1f2227f139216987f7f7c5e18"
+    root_url "https://github.com/elopez/homebrew-echidna/releases/download/echidna-2.0.1"
+    sha256 cellar: :any,                 big_sur:      "968efe11e676e7d08c5a625b32e261b5d180341cf1bf970cfcbbfb15fb3c705d"
+    sha256 cellar: :any,                 catalina:     "70960d1c14e09570a6f2ed6c51e25f959c934f5b4c2922b3bca78ffa834e64e8"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "51abf70e903f8984776b30c2cde356f5392254b0e6973bac7c9d9e5f1f81ee70"
   end
 
   depends_on "autoconf" => :build
