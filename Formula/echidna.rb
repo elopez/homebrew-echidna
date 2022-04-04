@@ -1,8 +1,8 @@
 class Echidna < Formula
   desc "Ethereum smart contract fuzzer"
   homepage "https://github.com/crytic/echidna"
-  url "https://github.com/crytic/echidna/archive/refs/tags/v2.0.0.tar.gz"
-  sha256 "8d0ec70153dc20bb747bd853029c2f0c8065ea755e58f6553331ed1f1b19d104"
+  url "https://github.com/crytic/echidna/archive/refs/tags/v2.0.1.tar.gz"
+  sha256 "d7bcebc343073bca64fdb4ac8b8b88ef91132f86dd65464a11ce9ce252db831f"
   license "AGPL-3.0-only"
   head "https://github.com/crytic/echidna.git", branch: "master"
 
@@ -37,12 +37,6 @@ class Echidna < Formula
     url "https://github.com/scipr-lab/libff.git",
       tag:      "v0.2.1",
       revision: "5835b8c59d4029249645cf551f417608c48f2770"
-  end
-
-  # Correct libBF pin and version number (PR submitted upstream)
-  patch do
-    url "https://github.com/crytic/echidna/commit/ed2201f3e67878ada271d2b6fb874557ded883d5.patch?full_index=1"
-    sha256 "a93872c3b3887b29006785aadc8711185064d631e8c3cb72dab4f30b12a49e60"
   end
 
   def install
