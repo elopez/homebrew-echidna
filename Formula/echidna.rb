@@ -6,6 +6,14 @@ class Echidna < Formula
   license "AGPL-3.0-only"
   head "https://github.com/crytic/echidna.git", branch: "master"
 
+  bottle do
+    root_url "https://github.com/elopez/homebrew-echidna/releases/download/echidna-2.0.2"
+    sha256 cellar: :any,                 monterey:     "19204c4d78e8550f9dda32d0b3bdfddaf669d7cbe1fe5109993a81918355cf44"
+    sha256 cellar: :any,                 big_sur:      "37c459a0314b26ca5a106f40e83b26619f1ca94690dd6859dbe33e3aa24b838d"
+    sha256 cellar: :any,                 catalina:     "9b2bad65434fdf3684fc91b364a17f5e24d543410ed62927f959c9625f3e490f"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "18f66a104f262ae836683cab74a2e63027effe07be8ca0263f711cffe2ff2cf8"
+  end
+
   depends_on "autoconf" => :build
   depends_on "automake" => :build
   depends_on "ghc" => :build
